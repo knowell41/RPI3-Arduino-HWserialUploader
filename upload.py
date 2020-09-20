@@ -6,10 +6,16 @@ from time import sleep as delay
 import sys
 import os
 
+
+
 hexFile = sys.argv[1]
 
+######################################
+yourDirectory = "/home/pi/avrdude/"
 
-print("begin")
+######################################
+
+
 resetPin = 16
 
 GPIO.setmode(GPIO.BOARD)
@@ -23,7 +29,7 @@ def reset():
     delay(0.02)
     GPIO.output(resetPin, GPIO.HIGH)
 def avrUpload(binFile):
-    command = "avrdude -v -p atmega328p -c arduino -P/dev/ttyAMA0 -b 57600 -D -U flash:w:/home/pi/avrdude/" + str(binFile) + ":i &"
+    command = "avrdude -v -p atmega328p -c arduino -P/dev/ttyAMA0 -b 57600 -D -U flash:w:"+ str(yourDirectory) + str(binFile) + ":i &"
     os.system(command)
     reset()
 
@@ -31,3 +37,4 @@ def avrUpload(binFile):
 
 avrUpload(hexFile)
 reset()
+GPIO.cleanup()
