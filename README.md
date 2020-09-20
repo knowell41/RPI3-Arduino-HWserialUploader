@@ -19,13 +19,13 @@ sudo raspi-config
 Exit raspi-config and reboot
 
 Hardware Connection
-ArduinoProMini			RPi
+ArduinoProMini-RPi
 
-Rx				Tx (GPIO14)\n
-Tx				Rx (GPIO15)
-DTR				GPIO23
-RAW				3v3
-GND				GND
+Rx-Tx(GPIO14)
+Tx-Rx(GPIO15)
+DTR-GPIO23
+RAW-3v3
+GND-GND
 
 edit python script to match your directory.
 
