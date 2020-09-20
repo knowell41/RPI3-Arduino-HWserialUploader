@@ -21,7 +21,7 @@ Exit raspi-config and reboot
 Hardware Connection
 ArduinoProMini			RPi
 
-Rx				Tx (GPIO14)
+Rx				Tx (GPIO14)\n
 Tx				Rx (GPIO15)
 DTR				GPIO23
 RAW				3v3
