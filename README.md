@@ -1,6 +1,6 @@
 # Hardware setup
 `Raspberry pi` with `Arduino` attached to hardware serial pins `GPIO14` and `GPIO15`.
-Its purpose is to seamlessly update the `arduino` firmware with `*.bin` file by running a `upload.py` script. This setup is useful for updating firmware of an `arduino` attached in rasberry pi without having to disassembel it and manually reprogram it using `official arduino software`.
+Its purpose is to seamlessly update the `arduino` firmware with `*.hex` file by running a `upload.py` script. This setup is useful for updating firmware of an `arduino` attached in rasberry pi without having to disassemble and manually reprogram it using `official arduino software`.
 
 #Installation
 ## Install dependencies
